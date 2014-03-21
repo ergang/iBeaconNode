@@ -4,6 +4,12 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "express": "3.x"
+    "express": "latest",
+    "mongoose": "latest",
+    "connect-mongo": "latest"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/ergang/iBeaconNode.git"
   }
 }
