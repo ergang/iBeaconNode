@@ -27,6 +27,11 @@ var tagSchema = mongoose.Schema({
 
 var TagModel = mongoose.model('Tag', tagSchema);
 
+app.all('*', function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
+    next();
+});
 
 app.post('/tags', function(req, res) {
 	//console.log('POST: ',req.body);

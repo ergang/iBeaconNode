@@ -4,3 +4,4 @@ config/config.js
 config/imager.js
 Makefile
 .DS_Store
+.idea
